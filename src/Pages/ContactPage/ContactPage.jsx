@@ -1,5 +1,11 @@
+import ContactTitle from "../../Components/Contact/ContactTitle";
+
 const ContactPage = () => {
-  return <div>This is the contact page!</div>;
+  return (
+    <>
+      <ContactTitle />
+    </>
+  );
 };
 
 export default ContactPage;
