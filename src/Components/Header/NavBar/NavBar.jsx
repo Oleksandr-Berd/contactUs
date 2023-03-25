@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import css from "./NavBar.module.css";
 
 const navElements = [
@@ -32,9 +32,9 @@ const NavBar = () => {
   return (
     <nav className={css.navbar}>
       {navElements.map(({ href, text }) => (
-        <Link to={href} key={href} className={css.item}>
+        <NavLink to={href} key={href} className={css.item}>
           <p className={css.text}>{text}</p>
-        </Link>
+        </NavLink>
       ))}
     </nav>
   );
