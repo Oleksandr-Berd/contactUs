@@ -32,8 +32,8 @@ const NavBar = () => {
   return (
     <nav className={css.navbar}>
       {navElements.map(({ href, text }) => (
-        <Link to={href} key={href}>
-          <p>{text}</p>
+        <Link to={href} key={href} className={css.item}>
+          <p className={css.text}>{text}</p>
         </Link>
       ))}
     </nav>
