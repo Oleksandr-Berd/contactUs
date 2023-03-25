@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Logo = () => {
   return (
     <div>
-      <Link to="logo">
+      <NavLink to="logo">
         <p>Logo here</p>
-      </Link>
+      </NavLink>
     </div>
   );
 };
