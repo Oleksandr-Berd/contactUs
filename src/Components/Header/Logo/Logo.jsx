@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Logo = () => {
   return (
     <div>
-      <p>Logo here</p>
+      <Link to="logo">
+        <p>Logo here</p>
+      </Link>
     </div>
   );
 };
