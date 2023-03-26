@@ -1,0 +1,29 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+li > a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 12px;
+  font-family: "Poppins";
+  line-height: 1.5;
+  font-style: normal;
+  color: #fff;
+}
+
+li > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.adress {
+  padding: 0 24px;
+}
