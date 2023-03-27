@@ -1,33 +1,59 @@
+import css from "./ContactForm.module.css";
+
 // The component which renders the form where user will be able to leave his message previosly filled his contact information
 
 const ContactForm = () => {
+  const handleChange = (evt) => {
+    // if (evt.target.value === "") {
+    //   evt.currentTarget.className = "";
+    //   evt.target.className = "";
+    // }
+
+    evt.currentTarget.className = css.active;
+    evt.target.className = css.active;
+  };
+
   return (
-    <form method="post">
-      <label htmlFor="firstName">First Name</label>
-      <input type="text" name="firstName" />
+    <form method="post" className={css.form}>
+      <label onChange={handleChange} htmlFor="firstName">
+        First Name
+        <input type="text" name="firstName" />
+      </label>
 
-      <label htmlFor="lastName">Last Name</label>
-      <input type="text" name="lastName" />
+      <label onChange={handleChange} htmlFor="lastName">
+        Last Name
+        <input type="text" name="lastName" />
+      </label>
 
-      <label htmlFor="email">Email</label>
-      <input type="email" name="email" />
+      <label onChange={handleChange} htmlFor="email">
+        Email
+        <input type="email" name="email" />
+      </label>
 
-      <label htmlFor="phoneNumber">Phone Number</label>
-      <input type="tel" name="phoneNumber" />
+      <label onChange={handleChange} htmlFor="phoneNumber">
+        Phone Number
+        <input type="tel" name="phoneNumber" />
+      </label>
 
-      <label htmlFor="selectSubject">Select Subject?</label>
-
-      <input type="checkbox" name="selectSubject" value="generalInquary" />
-      <label htmlFor="generalInquary">General Inquary</label>
-
-      <input type="checkbox" name="selectSubject" value="generalInquary2" />
-      <label htmlFor="generalInquary2">General Inquary</label>
-
-      <input type="checkbox" name="selectSubject" value="generalInquary3" />
-      <label htmlFor="generalInquary3">General Inquary</label>
-
-      <input type="checkbox" name="selectSubject" value="generalInquary4" />
-      <label htmlFor="generalInquary4">General Inquary</label>
+      <h4>Select subject?</h4>
+      <div className={css.gridContainer}>
+        <label onChange={handleChange} htmlFor="generalInquary">
+          General Inquary
+          <input type="checkbox" name="selectSubject" value="generalInquary" />
+        </label>
+        <label onChange={handleChange} htmlFor="generalInquary2">
+          General Inquary
+          <input type="checkbox" name="selectSubject" value="generalInquary2" />
+        </label>
+        <label onChange={handleChange} htmlFor="generalInquary3">
+          General Inquary{" "}
+          <input type="checkbox" name="selectSubject" value="generalInquary3" />
+        </label>
+        <label onChange={handleChange} htmlFor="generalInquary4">
+          General Inquary{" "}
+          <input type="checkbox" name="selectSubject" value="generalInquary4" />
+        </label>
+      </div>
 
       <label htmlFor="userMessage">Email</label>
       <textarea

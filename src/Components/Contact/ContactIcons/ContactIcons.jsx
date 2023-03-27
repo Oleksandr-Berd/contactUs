@@ -9,6 +9,7 @@ const ContactIcons = () => {
     <ul className={css.list}>
       <li className={css.item}>
         <SocialIcon
+          className={css.icon}
           url="https://twitter.com/UaBerd"
           style={{ width: 36, height: 36 }}
           fgColor="#fff"
@@ -17,6 +18,7 @@ const ContactIcons = () => {
       </li>
       <li className={css.item}>
         <SocialIcon
+          className={css.icon}
           url="https://www.instagram.com/berd__man/"
           style={{ width: 36, height: 36 }}
           fgColor="#fff"
@@ -25,8 +27,12 @@ const ContactIcons = () => {
       </li>
       <li className={css.item}>
         <SocialIcon
+          className={css.icon}
           url="https://www.linkedin.com/in/oleksandr-berdychevskyi-83336761/"
-          style={{ width: 36, height: 36 }}
+          style={{
+            width: 36,
+            height: 36,
+          }}
           fgColor="#fff"
           bgColor="#262626"
         />
