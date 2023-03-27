@@ -1,3 +1,7 @@
+.container {
+  position: relative;
+}
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -32,9 +36,8 @@ li > *:not(:last-child) {
 .smallIcon {
   position: absolute;
   z-index: 999;
-  /* right: 30px; */
-  right: calc(100vw - 90%);
-  top: 500px;
+  right: calc(100vw - 115%);
+  top: calc(100vh - 45%);
   width: 54px;
   height: 54px;
 }
@@ -42,7 +45,6 @@ li > *:not(:last-child) {
 .largeIcon {
   position: absolute;
   z-index: 500;
-  right: calc(100vw - 98.65%);
-  /* top: 510px; */
-  top: calc(100vh + 47%);
+  right: calc(100vw - 121%);
+  top: calc(100vh - 43%);
 }
