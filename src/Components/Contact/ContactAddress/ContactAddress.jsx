@@ -4,7 +4,6 @@ import { IoMdMail } from "react-icons/io";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import css from "./ContactAddress.module.css";
-import eclipse from "../../../Utilities/Images/Ellipse 796.svg";
 
 // This component is responsible for rendering links (anchors on the address inforamation)
 // The actual address is opened in new tab in your browser on GoogleMap
@@ -38,7 +37,7 @@ const ContactAddress = () => {
           viewBox="0 0 54 54"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="27" cy="27" r="27" fill="#484848" fill-opacity=".5" />
+          <circle cx="27" cy="27" r="27" fill="#484848" fillOpacity=".5" />
         </svg>
         <svg
           className={css.largeIcon}
