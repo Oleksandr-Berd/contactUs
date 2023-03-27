@@ -1,6 +1,7 @@
 .list {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 58px;
 }
 
 .list > li {
@@ -26,4 +27,20 @@ li > *:not(:last-child) {
 
 .adress {
   padding: 0 24px;
+}
+
+.smallIcon {
+  position: absolute;
+  z-index: 999;
+  right: 30px;
+  top: 500px;
+  width: 54px;
+  height: 54px;
+}
+
+.largeIcon {
+  position: absolute;
+  z-index: 500;
+  right: 5px;
+  top: 510px;
 }
