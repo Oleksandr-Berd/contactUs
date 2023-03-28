@@ -38,29 +38,34 @@ const ContactForm = () => {
       <h4>Select subject?</h4>
       <div className={css.gridContainer}>
         <label onChange={handleChange} htmlFor="generalInquary">
-          General Inquary
           <input type="checkbox" name="selectSubject" value="generalInquary" />
+          General Inquary
         </label>
         <label onChange={handleChange} htmlFor="generalInquary2">
-          General Inquary
           <input type="checkbox" name="selectSubject" value="generalInquary2" />
+          General Inquary
         </label>
         <label onChange={handleChange} htmlFor="generalInquary3">
-          General Inquary{" "}
           <input type="checkbox" name="selectSubject" value="generalInquary3" />
+          General Inquary
         </label>
         <label onChange={handleChange} htmlFor="generalInquary4">
-          General Inquary{" "}
           <input type="checkbox" name="selectSubject" value="generalInquary4" />
+          General Inquary
         </label>
       </div>
 
-      <label htmlFor="userMessage">Email</label>
+      <label id={css.labelTextarea} htmlFor="userMessage">
+        Email
+      </label>
       <textarea
+        className={css.textarea}
         name="userMessage"
         placeholder="Write your message.."
       ></textarea>
-      <button type="submit">Send message</button>
+      <button className={css.button} type="submit">
+        Send message
+      </button>
     </form>
   );
 };
