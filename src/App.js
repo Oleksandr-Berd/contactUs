@@ -6,7 +6,6 @@ import HomePage from "./Pages/HomePage/HomePage";
 import ShopPage from "./Pages/ShopPage/ShopPage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
-import LogoPage from "./Pages/LogoPage/LogoPage";
 import PrivacyPage from "./Pages/PrivacyPage/PrivacyPage";
 import TermsSerPage from "./Pages/TermsSerPage/TermsSerPage";
 import TermsUsePage from "./Pages/TermsUsePage/TermsUsePage";
@@ -21,23 +20,22 @@ function App() {
     <>
       <Layout>
         <Routes>
-          <Route path="/" element={<Header />}>
-            <Route index element={<Navigate to="/home" />} />
-            <Route path="logo" element={<LogoPage />}></Route>
-            <Route path="logo/privacy" element={<PrivacyPage />} />
-            <Route path="logo/termsser" element={<TermsSerPage />} />
-            <Route path="logo/termsuse" element={<TermsUsePage />} />
-            <Route path="logo/refundpolicy" element={<RefundPolicyPage />} />
+          <Route path="/" element={<Header />}></Route>
+          <Route index element={<Navigate to="/home" />} />
+          <Route path="home" element={<HomePage />} />
+          <Route path="home/privacy" element={<PrivacyPage />} />
+          <Route path="home/termsser" element={<TermsSerPage />} />
+          <Route path="home/termsuse" element={<TermsUsePage />} />
+          <Route path="home/refundpolicy" element={<RefundPolicyPage />} />
 
-            <Route path="logo/techlabz" element={<TechlabzPage />} />
-            <Route path="logo/downloads" element={<DownloadsPage />} />
-            <Route path="logo/forum" element={<ForumPage />} />
-            <Route path="home" element={<HomePage />} />
-            <Route path="blog" element={<BlogPage />} />
-            <Route path="shop" element={<ShopPage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="contact" element={<ContactPage />} />
-          </Route>
+          <Route path="home/techlabz" element={<TechlabzPage />} />
+          <Route path="home/downloads" element={<DownloadsPage />} />
+          <Route path="home/forum" element={<ForumPage />} />
+
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="shop" element={<ShopPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
         </Routes>
       </Layout>
     </>
