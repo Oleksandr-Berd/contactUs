@@ -35,7 +35,7 @@ li > *:not(:last-child) {
 
 .smallIcon {
   position: absolute;
-  z-index: 999;
+  z-index: 110;
   right: calc(100vw - 115%);
   top: calc(100vh - 45%);
   width: 54px;
@@ -44,7 +44,7 @@ li > *:not(:last-child) {
 
 .largeIcon {
   position: absolute;
-  z-index: 500;
-  right: calc(100vw - 121%);
+  z-index: 100;
+  right: calc(100vw - 123.5%);
   top: calc(100vh - 43%);
 }

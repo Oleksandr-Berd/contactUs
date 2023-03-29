@@ -15,24 +15,28 @@ const ContactForm = () => {
 
   return (
     <form method="post" className={css.form}>
-      <label onChange={handleChange} htmlFor="firstName">
+      <label className={css.label} onChange={handleChange} htmlFor="firstName">
         First Name
-        <input type="text" name="firstName" />
+        <input className={css.input} type="text" name="firstName" />
       </label>
 
-      <label onChange={handleChange} htmlFor="lastName">
+      <label className={css.label} onChange={handleChange} htmlFor="lastName">
         Last Name
-        <input type="text" name="lastName" />
+        <input className={css.input} type="text" name="lastName" />
       </label>
 
-      <label onChange={handleChange} htmlFor="email">
+      <label className={css.label} onChange={handleChange} htmlFor="email">
         Email
-        <input type="email" name="email" />
+        <input className={css.input} type="email" name="email" />
       </label>
 
-      <label onChange={handleChange} htmlFor="phoneNumber">
+      <label
+        className={css.label}
+        onChange={handleChange}
+        htmlFor="phoneNumber"
+      >
         Phone Number
-        <input type="tel" name="phoneNumber" />
+        <input className={css.input} type="tel" name="phoneNumber" />
       </label>
 
       <h4>Select subject?</h4>

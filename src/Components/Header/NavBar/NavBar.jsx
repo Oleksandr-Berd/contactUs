@@ -1,29 +1,31 @@
+import { HiOutlineUserCircle } from "react-icons/hi";
+import { SlBasket } from "react-icons/sl";
 import { NavLink } from "react-router-dom";
 import css from "./NavBar.module.css";
 
 const navElements = [
   {
-    href: "home",
+    href: "http://localhost:3000/home",
     text: "Home",
   },
   {
-    href: "features",
+    href: "http://localhost:3000/features",
     text: "Features",
   },
   {
-    href: "blog",
+    href: "http://localhost:3000/blog",
     text: "Blog",
   },
   {
-    href: "shop",
+    href: "http://localhost:3000/shop",
     text: "Shop",
   },
   {
-    href: "about",
+    href: "http://localhost:3000/about",
     text: "About",
   },
   {
-    href: "contact",
+    href: "http://localhost:3000/contact",
     text: "Contact",
   },
 ];
@@ -32,10 +34,16 @@ const NavBar = () => {
   return (
     <nav className={css.navbar}>
       {navElements.map(({ href, text }) => (
-        <NavLink to={href} key={href} className={css.item}>
-          <p className={css.text}>{text}</p>
-        </NavLink>
+        <li key={href} className={css.item}>
+          <NavLink to={href}>
+            <p className={css.text}>{text}</p>
+          </NavLink>
+        </li>
       ))}
+      <div className={css.icons}>
+        <HiOutlineUserCircle />
+        <SlBasket />
+      </div>
     </nav>
   );
 };
