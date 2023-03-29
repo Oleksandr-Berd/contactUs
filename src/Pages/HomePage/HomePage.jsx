@@ -10,27 +10,38 @@ const HomePage = () => {
       <h1 className={css.logo}>Logo here</h1>
       <div className={css.grid}>
         <div className={css.contactAdress}>
-          <h2>Reach us</h2>
+          <h2 className={css.titleHome}>Reach us</h2>
           <HomeAdress />
         </div>
         <div className={css.companyList}>
-          <h2>Company</h2>
+          <h2 className={css.titleHome}>Company</h2>
           <CompanyList />
         </div>
         <div className={css.legalList}>
-          <h2>Legal</h2>
+          <h2 className={css.titleHome}>Legal</h2>
           <LegalList />
         </div>
         <div className={css.qickLinks}>
-          <h2>Quick Links</h2>
+          <h2 className={css.titleHome}>Quick Links</h2>
           <QuickLinksList />
         </div>
       </div>
       <form method="post">
-        <label htmlFor="email">Join Our Newsletter</label>
-        <input type="email" name="email" placeholder="Your email address" />
-        <button type="submit">Subscribe</button>
-        <p>* Will send you weekly updates for your better tool management</p>
+        <label className={css.labelHome} htmlFor="email">
+          Join Our Newsletter
+        </label>
+        <input
+          className={css.inputHome}
+          type="email"
+          name="email"
+          placeholder="Your email address"
+        />
+        <button className={css.buttonHome} type="submit">
+          Subscribe
+        </button>
+        <p className={css.textHome}>
+          * Will send you weekly updates for your better tool management
+        </p>
       </form>
     </div>
   );
